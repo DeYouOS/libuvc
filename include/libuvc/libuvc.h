@@ -530,6 +530,7 @@ typedef struct uvc_still_ctrl {
 } uvc_still_ctrl_t;
 
 uvc_error_t uvc_init(uvc_context_t **ctx, struct libusb_context *usb_ctx);
+uvc_error_t uvc_init_no_root(uvc_context_t **ctx, struct libusb_context *usb_ctx);
 void uvc_exit(uvc_context_t *ctx);
 
 uvc_error_t uvc_get_device_list(
